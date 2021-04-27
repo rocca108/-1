@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var 대답
+        var 반복수 = 0;
+        while (true) {
+            var 대답 = prompt("?");
+            var 반복수 = prompt("몇트?(1이상의 숫자만 쓰시오)");
+             if(반복수>=1){
+                for(var 반복문_변수 = 1; 반복문_변수 <= 반복수; 반복문_변수++)
+                 {
+                 document.write(대답+" ("+ 반복문_변수 +"트)"+"<br />");
+                 }
+                 break;
+                }else{
+                alert ("1이상의 숫자가 아닙니다");
+                }
+             }
+        alert("'"+대답+"'"+"을 "+반복수+"번 입력 하였습니다.")
+        
+        /*
+        #안쓰는 코드#
+        var a = 1;
+        while(a <= 100){
+            document.write(i+" "+ a +"트"+"<br />");
+            a = a+1;
+        }
+        */
+
+    </script>
+</body>
+</html>
